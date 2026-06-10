@@ -37,7 +37,7 @@
   "additionalProperties": false,
   "$defs": {
     "varInfo": {
-      "$ref": "https://raw.githubusercontent.com/verona-interfaces/variable-info/refs/tags/2.0/variable-info.schema.json"
+      "$ref": "https://w3id.org/iqb/spec/variable-info/2.0"
     }
   }
 }
