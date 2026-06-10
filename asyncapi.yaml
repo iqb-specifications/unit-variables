@@ -1,7 +1,7 @@
 asyncapi: 2.5.0
 info:
-  title: unit-items
-  description: Specification for items as part of the unit data.
+  title: unit-variables
+  description: Specification for variables as part of the unit data.
   license:
     name: CC0 1.0
     url: https://creativecommons.org/publicdomain/zero/1.0/
@@ -18,4 +18,4 @@ channels:
 components:
   schemas:
     metadata-values:
-      $ref: 'unit-items.schema.json'
+      $ref: 'unit-variables.schema.json'
