@@ -1,0 +1,14 @@
+{
+    "baseVariables": [
+        {
+            "id": "yoyo",
+            "alias": "nö"
+        }
+    ],
+    "derivedVariables": [
+        {
+            "id": "nuus",
+            "basedOn": ["i1", "i2"]
+        }
+    ]
+}

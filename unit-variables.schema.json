@@ -1,0 +1,43 @@
+{
+  "$id": "unit-variables@0.1",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Unit Variables.",
+  "description": "Specification for variables as part of the unit data.",
+  "type": "object",
+  "properties": {
+    "baseVariables": {
+      "description": "All variables set via editor modul",
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/varInfo"
+      }
+    },
+    "derivedVariables": {
+      "description": "All derived variables set by schemer module",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Id of the derived variable"
+          },
+          "basedOn": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": ["id", "basedOn"],
+        "additionalProperties": false
+      }        
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "varInfo": {
+      "$ref": "https://raw.githubusercontent.com/verona-interfaces/variable-info/refs/tags/2.0/variable-info.schema.json"
+    }
+  }
+}
